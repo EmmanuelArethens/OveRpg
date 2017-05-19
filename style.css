@@ -1,0 +1,65 @@
+body {
+    background-image:url(images/bg-path.jpg);
+    display: flex;
+justify-content: center;
+    }
+
+#jeu {
+background-image: url(images/ilios.jpg);
+height: 720px;
+width: 1280px;
+background-color: white;
+
+}
+
+#intro {
+    position: absolute;
+    height: 95%;
+}
+
+#jouer {
+    position: absolute;
+    margin-top: 45vh;
+margin-left: 45vw;
+}
+
+#affichage {
+    display: flex;
+    justify-content: space-between;
+}
+
+#atracer {
+    background-color: orange;
+}
+
+#apharah {
+    background-color: blue;
+}
+
+#sprite {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 430px;
+}
+
+#button {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.traceranim {
+ width: 320px; /* Icon width */
+height: 240px; /* Icon height */
+display: inline-block; /* Display icon as inline block */
+background-position: 0 -200px; /* Icon background position in sprite */
+background: url("images/Tracer/TracerPulsegun/tracer1.png");
+animation-name: tracerpulsegun;
+animation-duration:5s;
+}
+
+@keyframes tracerpulsegun {
+8%   
+}
