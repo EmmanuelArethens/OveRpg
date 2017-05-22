@@ -1,26 +1,25 @@
 body {
-    background-image:url(images/bg-path.jpg);
+    background-image: url(images/bg-path.jpg);
     display: flex;
-justify-content: center;
-    }
+    justify-content: center;
+}
 
 #jeu {
-background-image: url(images/ilios.jpg);
-height: 720px;
-width: 1280px;
-background-color: white;
-
+    background-image: url(images/ilios.jpg);
+    height: 720px;
+    width: 1280px;
+    background-color: white;
 }
 
 #intro {
-    position: absolute;
-    height: 95%;
+    position: fixed;
+    height: 100%;
 }
 
 #jouer {
     position: absolute;
     margin-top: 45vh;
-margin-left: 45vw;
+    margin-left: 45vw;
 }
 
 #affichage {
@@ -36,6 +35,11 @@ margin-left: 45vw;
     background-color: blue;
 }
 
+#tirs {
+    display: none;
+    position: absolute;
+}
+
 #sprite {
     display: flex;
     justify-content: space-around;
@@ -49,17 +53,67 @@ margin-left: 45vw;
     align-items: flex-end;
 }
 
-
-.traceranim {
- width: 320px; /* Icon width */
-height: 240px; /* Icon height */
-display: inline-block; /* Display icon as inline block */
-background-position: 0 -200px; /* Icon background position in sprite */
-background: url("images/Tracer/TracerPulsegun/tracer1.png");
-animation-name: tracerpulsegun;
-animation-duration:5s;
+@keyframes tracerpulsegun {
+    0% {
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+    8.33% {
+        background-position-x: 0px;
+        background-position-y: -240px;
+    }
+    16.66% {
+        background-position-x: 0px;
+        background-position-y: -480px;
+    }
+    25% {
+        background-position-x: 0px;
+        background-position-y: -720px;
+    }
+    33.33% {
+        background-position-x: 0px;
+        background-position-y: -960px;
+    }
+    41.66% {
+        background-position-x: 0px;
+        background-position-y: -1200px;
+    }
+    50% {
+        background-position-x: 0px;
+        background-position-y: -1440px;
+    }
+    58.33% {
+        background-position-x: 0px;
+        background-position-y: -1680px;
+    }
+    66.66% {
+        background-position-x: 0px;
+        background-position-y: -1920px;
+    }
+    75% {
+        background-position-x: 0px;
+        background-position-y: -2160px;
+    }
+    83.33% {
+        background-position-x: 0px;
+        background-position-y: -2400px;
+    }
+    91.66% {
+        background-position-x: 0px;
+        background-position-y: -2640px;
+    }
+    100% {
+        background-position-x: 0px;
+        background-position-y: -2880px;
+    }
 }
 
-@keyframes tracerpulsegun {
-8%   
+.traceranim {
+    width: 320px;
+    height: 240px;
+    background: url("images/Tracer/TracerPulsegun/tracer1.png");
+    display: inline-block;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    animation: 1s steps(1) infinite;
 }
