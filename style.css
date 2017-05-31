@@ -12,8 +12,10 @@ body {
 }
 
 #intro {
-    position: fixed;
-    height: 100%;
+    position: absolute;
+    height: 720px;
+    width: 1280px;
+    display: block;
 }
 
 #jouer {
